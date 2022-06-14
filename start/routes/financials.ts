@@ -10,3 +10,5 @@ Route.group(() => {
 })
   .middleware('auth')
   .prefix('/api/v1/financials')
+
+Route.post('/api/v1/financials/webhooks', 'WebHookController.handle')

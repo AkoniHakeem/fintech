@@ -29,4 +29,5 @@ export default Env.rules({
   NODE_ENV: Env.schema.enum(['development', 'production', 'test'] as const),
   FLW_SECRET: Env.schema.string(),
   FLW_ENCRYPTION_KEY: Env.schema.string(),
+  FLUTTERWAVE_WEBHOOK_ENDPOINT_SECRET: Env.schema.string(),
 })

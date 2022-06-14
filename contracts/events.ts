@@ -29,5 +29,6 @@ declare module '@ioc:Adonis/Core/Event' {
   */
   interface EventsList {
     'new:user': User
+    'charge.complete': Record<string, unknown>
   }
 }
